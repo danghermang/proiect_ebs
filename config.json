@@ -1,6 +1,17 @@
 {
-  "number_of_publications":10,
-  "number_of_subscriptions":10,
-  "probabilities":{"name":80,"eye_color":60,"birth_date":80,"heart_rate":70,"height":60},
-  "operator_probabilities":{"name":["=",70]}
+  "number_of_publications": 10,
+  "number_of_subscriptions": 10,
+  "probabilities": {
+    "name": 80,
+    "eye_color": 60,
+    "birth_date": 80,
+    "heart_rate": 70,
+    "height": 60
+  },
+  "operator_probabilities": {
+    "name": [
+      "=",
+      70
+    ]
+  }
 }
