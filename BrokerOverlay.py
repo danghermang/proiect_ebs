@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import pika
 
 from shared import brokers_exchange, subscriptions_exchange, host
