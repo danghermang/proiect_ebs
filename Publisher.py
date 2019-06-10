@@ -5,14 +5,14 @@ import uuid
 
 import pika
 
-from shared import host, publications_exchange, generate_publications
+from shared import publications_exchange, generate_publications,parameters
 
 publisher_id = str(uuid.uuid4())
 props = pika.BasicProperties(app_id=publisher_id, delivery_mode=2)
 
 print("Publisher with id=%r start to send publications" % publisher_id)
 
-connection = pika.BlockingConnection(pika.ConnectionParameters(host=host))
+connection = pika.BlockingConnection(parameters)
 channel = connection.channel()
 
 channel.exchange_declare(exchange=publications_exchange, exchange_type='fanout')

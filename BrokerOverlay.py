@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 import pika
 
-from shared import brokers_exchange, subscriptions_exchange, host
+from shared import brokers_exchange, subscriptions_exchange, parameters
 
 brokers = []
 actual_broker = 0
 print("Broker overlay management")
-connection = pika.BlockingConnection(pika.ConnectionParameters(host=host))
+
+connection = pika.BlockingConnection(parameters)
 brokers_channel = connection.channel()
 subscriptions_channel = connection.channel()
 publications_channel = connection.channel()

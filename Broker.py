@@ -3,7 +3,8 @@ import json
 import uuid
 import pika
 
-from shared import host, brokers_exchange, subscriptions_exchange, publications_exchange, match_subscription
+from shared import brokers_exchange, subscriptions_exchange, \
+    publications_exchange, match_subscription, parameters
 
 subscribers = []
 publications = []
@@ -11,7 +12,7 @@ broker_id = str(uuid.uuid4())
 
 print("Broker with Id=%r" % broker_id)
 
-connection = pika.BlockingConnection(pika.ConnectionParameters(host=host))
+connection = pika.BlockingConnection(parameters)
 brokers_channel = connection.channel()
 subscriptions_channel = connection.channel()
 publications_channel = connection.channel()

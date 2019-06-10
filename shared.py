@@ -4,8 +4,14 @@ import json
 import random
 import time
 import names
+import pika
 
-host = "192.168.119.1"
+host = "ebs"
+credentials = pika.PlainCredentials('ebs', 'ebs')
+parameters = pika.ConnectionParameters('132.45.23.14',
+                                   5672,
+                                   '/',
+                                   credentials)
 brokers_exchange = "brokers"
 subscriptions_exchange = "subscriptions"
 publications_exchange = "publications"

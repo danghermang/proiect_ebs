@@ -4,12 +4,12 @@ import time
 import uuid
 import pika
 
-from shared import subscriptions_exchange, host, generate_subscriptions
+from shared import subscriptions_exchange, host, generate_subscriptions,credentials
 
 subscriber_id = str(uuid.uuid4())
 print("Subscriber with Id=%r start to send subscriptions" % subscriber_id)
 
-connection = pika.BlockingConnection(pika.ConnectionParameters(host=host))
+connection = pika.BlockingConnection(pika.ConnectionParameters(host=host, credentials=credentials))
 channel = connection.channel()
 
 channel.exchange_declare(exchange=subscriptions_exchange, exchange_type='fanout')
