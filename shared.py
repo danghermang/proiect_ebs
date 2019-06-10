@@ -8,10 +8,10 @@ import pika
 
 host = "ebs"
 credentials = pika.PlainCredentials('ebs', 'ebs')
-parameters = pika.ConnectionParameters('132.45.23.14',
-                                   5672,
-                                   '/',
-                                   credentials)
+parameters = pika.ConnectionParameters('10.210.20.209',
+                                       5672,
+                                       '/',
+                                       credentials)
 brokers_exchange = "brokers"
 subscriptions_exchange = "subscriptions"
 publications_exchange = "publications"
