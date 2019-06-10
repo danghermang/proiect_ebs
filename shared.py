@@ -5,7 +5,7 @@ import random
 import time
 import names
 
-host = "localhost"
+host = "192.168.119.1"
 brokers_exchange = "brokers"
 subscriptions_exchange = "subscriptions"
 publications_exchange = "publications"
