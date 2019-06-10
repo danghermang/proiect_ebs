@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
+import os
 import pika
-
+import logging
 from shared import brokers_exchange, subscriptions_exchange, parameters
 
+if not os.path.exists("./logs/"):
+    os.makedirs("./logs")
+logging.getLogger(__file__)
+logging.basicConfig(filename=os.path.join("./logs/",os.path.basename(__file__)+'.log'), level=logging.INFO)
 brokers = []
 actual_broker = 0
 print("Broker overlay management")
+logging.info("Broker overlay management")
 
 connection = pika.BlockingConnection(parameters)
 brokers_channel = connection.channel()
@@ -24,6 +30,7 @@ def manage_brokers(ch, method, properties, body):
     broker_queue_name = properties.reply_to
     brokers.append((broker_id, broker_queue_name))
     print("\rRegistered broker with id %r" % broker_id)
+    logging.info("\rRegistered broker with id %r" % broker_id)
 
 
 brokers_channel.basic_consume(queue=brokers_result_queue, on_message_callback=manage_brokers)
@@ -49,8 +56,12 @@ def manage_subscriptions(ch, method, properties, body):
         subscriptions_channel.basic_publish(exchange='', routing_key=brokers[broker_id][1], properties=properties,
                                             body=body)
         print("\rSubscription from '{0}' sent to '{1}'".format(properties.app_id, brokers[broker_id][0]))
+        logging.info("\rSubscription from '{0}' sent to '{1}'".format(properties.app_id, brokers[broker_id][0]))
 
 
 subscriptions_channel.basic_consume(queue=subscriptions_result_queue, on_message_callback=manage_subscriptions,
                                     auto_ack=True)
-subscriptions_channel.start_consuming()
+try:
+    subscriptions_channel.start_consuming()
+except KeyboardInterrupt:
+    subscriptions_channel.stop_consuming()

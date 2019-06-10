@@ -1,16 +1,21 @@
 #!/usr/bin/env python3
-import json
-import time
+import pickle
 import uuid
-
 import pika
-
+import logging
+import os
 from shared import publications_exchange, generate_publications,parameters
 
+if not os.path.exists("./logs/"):
+    os.makedirs("./logs")
+logging.getLogger(__file__)
+logging.basicConfig(filename=os.path.join("./logs/",os.path.basename(__file__)+'.log'), level=logging.INFO)
 publisher_id = str(uuid.uuid4())
 props = pika.BasicProperties(app_id=publisher_id, delivery_mode=2)
 
 print("Publisher with id=%r start to send publications" % publisher_id)
+logging.info("Publisher with id=%r start to send publications" % publisher_id)
+
 
 connection = pika.BlockingConnection(parameters)
 channel = connection.channel()
@@ -21,9 +26,12 @@ publications = generate_publications()
 
 for publication in publications:
     channel.basic_publish(exchange=publications_exchange, routing_key='', properties=props,
-                          body=json.dumps(publication))
+                          body=pickle.dumps(publication))
     print("Sent publication %r" % publication)
-    time.sleep(2)
+    logging.info("Sent publication %r" % publication)
 
 
 print("Publications sent!")
+logging.info("Publications sent!")
+input()
+connection.close()

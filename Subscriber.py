@@ -1,15 +1,21 @@
 #!/usr/bin/env python3
-import json
-import time
+import logging
+import pickle
 import uuid
 import pika
+import os
 
-from shared import subscriptions_exchange, host, generate_subscriptions,credentials
+from shared import subscriptions_exchange, host, generate_subscriptions,parameters
 
+if not os.path.exists("./logs/"):
+    os.makedirs("./logs")
+logging.getLogger(__file__)
+logging.basicConfig(filename=os.path.join("./logs/",os.path.basename(__file__)+'.log'), level=logging.INFO)
 subscriber_id = str(uuid.uuid4())
 print("Subscriber with Id=%r start to send subscriptions" % subscriber_id)
+logging.info("Subscriber with Id=%r start to send subscriptions" % subscriber_id)
 
-connection = pika.BlockingConnection(pika.ConnectionParameters(host=host, credentials=credentials))
+connection = pika.BlockingConnection(parameters)
 channel = connection.channel()
 
 channel.exchange_declare(exchange=subscriptions_exchange, exchange_type='fanout')
@@ -21,17 +27,21 @@ props = pika.BasicProperties(app_id=subscriber_id, reply_to=result_queue)
 subscriptions = generate_subscriptions()
 for subscription in subscriptions:
     channel.basic_publish(exchange=subscriptions_exchange, routing_key='', properties=props,
-                          body=json.dumps(subscription))
+                          body=pickle.dumps(subscription))
     print("Sent subscription %r" % subscription)
-    time.sleep(2)
+    logging.info("Sent subscription %r" % subscription)
 
 
 def callback(ch, method, properties, body):
-    response = json.loads(body)
+    response = pickle.loads(body)
     print("Received matching publication %r " % response[0])
+    logging.info("Received matching publication %r " % response[0])
     print("\t for subscription %r " % response[1])
-    print()
+    logging.info("\t for subscription %r " % response[1])
 
 
 channel.basic_consume(queue=result_queue, on_message_callback=callback, auto_ack=True)
-channel.start_consuming()
+try:
+    channel.start_consuming()
+except KeyboardInterrupt:
+    channel.stop_consuming()
