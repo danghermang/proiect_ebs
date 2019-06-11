@@ -12,7 +12,7 @@ if not os.path.exists("./logs/"):
     os.makedirs("./logs")
 if __name__ == "__main__":
     logging.getLogger(__file__)
-    logging.basicConfig(filename=os.path.join("./logs/",os.path.basename(__file__)+'.log'), level=logging.INFO)
+    logging.basicConfig(filename=os.path.join("./logs/", os.path.basename(__file__) + '.log'), level=logging.INFO)
 host = "ebs"
 credentials = pika.PlainCredentials('ebs', 'ebs')
 parameters = pika.ConnectionParameters('192.168.119.1',
@@ -62,7 +62,6 @@ def get_heart_rate(minim=50, maxim=230, default=None):
 
 
 def get_height(minim=150, maxim=220, default=None):
-
     if default:
         choices = ["=", "!=", "<", "<=", ">", ">="]
         return random.choice(choices), random.randint(minim, maxim)
@@ -83,7 +82,7 @@ functions = {'birth_date': random_date, 'eye_color': get_eye_color, 'heart_rate'
 
 def generate_publications():
     publications = []
-    logging.info("Generating "+str(config['number_of_publications'])+"publications")
+    logging.info("Generating " + str(config['number_of_publications']) + "publications")
     for _ in range(config['number_of_publications']):
 
         publication = {}
