@@ -4,7 +4,7 @@ import uuid
 import pika
 import logging
 import os
-from shared import publications_exchange, generate_publications,parameters
+from shared import publications_exchange, publications_generator,parameters
 
 if not os.path.exists("./logs/"):
     os.makedirs("./logs")
@@ -22,9 +22,8 @@ channel = connection.channel()
 
 channel.exchange_declare(exchange=publications_exchange, exchange_type='fanout')
 
-publications = generate_publications()
 
-for publication in publications:
+for publication in publications_generator():
     channel.basic_publish(exchange=publications_exchange, routing_key='', properties=props,
                           body=pickle.dumps(publication))
     print("Sent publication %r" % publication)

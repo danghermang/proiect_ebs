@@ -84,12 +84,20 @@ def generate_publications():
     publications = []
     logging.info("Generating " + str(config['number_of_publications']) + "publications")
     for _ in range(config['number_of_publications']):
-
         publication = {}
         for probability in config['probabilities']:
             publication[probability] = functions[probability]()
         publications.append(publication)
     return publications
+
+
+def publications_generator():
+    logging.info("Generating " + str(config['number_of_publications']) + "publications")
+    for _ in range(config['number_of_publications']):
+        publication = {}
+        for probability in config['probabilities']:
+            publication[probability] = functions[probability]()
+        yield publication
 
 
 def generate_subscriptions():
