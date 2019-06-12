@@ -1,0 +1,858 @@
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('192.168.119.1', 5672)
+ERROR:pika.adapters.utils.io_services_utils:Socket failed to connect: <socket.socket fd=712, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 53518)>; error=10061 (Unknown error)
+ERROR:pika.adapters.utils.connection_workflow:TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('192.168.119.1', 5672))
+ERROR:pika.adapters.utils.connection_workflow:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+ERROR:pika.adapters.utils.connection_workflow:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - None.
+ERROR:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - None
+ERROR:pika.adapters.blocking_connection:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - None
+ERROR:pika.adapters.blocking_connection:Error in _create_connection().
+Traceback (most recent call last):
+  File "C:\Users\ilpopa\AppData\Local\Continuum\anaconda3\lib\site-packages\pika\adapters\blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('192.168.119.1', 5672)
+ERROR:pika.adapters.utils.io_services_utils:Socket failed to connect: <socket.socket fd=140, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 53532)>; error=10061 (Unknown error)
+ERROR:pika.adapters.utils.connection_workflow:TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('192.168.119.1', 5672))
+ERROR:pika.adapters.utils.connection_workflow:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+ERROR:pika.adapters.utils.connection_workflow:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - None.
+ERROR:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - None
+ERROR:pika.adapters.blocking_connection:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - None
+ERROR:pika.adapters.blocking_connection:Error in _create_connection().
+Traceback (most recent call last):
+  File "C:\Users\ilpopa\AppData\Local\Continuum\anaconda3\lib\site-packages\pika\adapters\blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('192.168.119.1', 5672)
+ERROR:pika.adapters.utils.io_services_utils:Socket failed to connect: <socket.socket fd=792, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('0.0.0.0', 53546)>; error=10061 (Unknown error)
+ERROR:pika.adapters.utils.connection_workflow:TCP Connection attempt failed: ConnectionRefusedError(10061, 'Unknown error'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('192.168.119.1', 5672))
+ERROR:pika.adapters.utils.connection_workflow:AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error')
+ERROR:pika.adapters.utils.connection_workflow:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - None.
+ERROR:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - None
+ERROR:pika.adapters.blocking_connection:Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(10061, 'Unknown error'); first exception - None
+ERROR:pika.adapters.blocking_connection:Error in _create_connection().
+Traceback (most recent call last):
+  File "C:\Users\ilpopa\AppData\Local\Continuum\anaconda3\lib\site-packages\pika\adapters\blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.AMQPConnectionError
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=848, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 53597), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000017B992A7F60>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000017B992A7F60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=848, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 53597), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=848, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 53597), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=848, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 53597), raddr=('127.0.0.1', 5672)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: error-arg=None; pending-error=ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+INFO:pika.connection:Connection setup terminated due to ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+ERROR:pika.adapters.utils.connection_workflow:AMQPConnector - reporting failure: AMQPConnectorAMQPHandshakeError: ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('::1', 5672, 0, 0)
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=848, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 53597), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=712, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 53598, 0, 0), raddr=('::1', 5672, 0, 0)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000017B992C20F0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000017B992C20F0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=712, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 53598, 0, 0), raddr=('::1', 5672, 0, 0)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=712, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 53598, 0, 0), raddr=('::1', 5672, 0, 0)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=712, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 53598, 0, 0), raddr=('::1', 5672, 0, 0)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: error-arg=None; pending-error=ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+INFO:pika.connection:Connection setup terminated due to ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+ERROR:pika.adapters.utils.connection_workflow:AMQPConnector - reporting failure: AMQPConnectorAMQPHandshakeError: ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+ERROR:pika.adapters.utils.connection_workflow:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorAMQPHandshakeError: ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'; first exception - AMQPConnectorAMQPHandshakeError: ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'.
+ERROR:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorAMQPHandshakeError: ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'; first exception - AMQPConnectorAMQPHandshakeError: ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=712, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 53598, 0, 0), raddr=('::1', 5672, 0, 0)>
+ERROR:pika.adapters.blocking_connection:Connection workflow failed: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorAMQPHandshakeError: ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'; first exception - AMQPConnectorAMQPHandshakeError: ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+ERROR:pika.adapters.blocking_connection:Error in _create_connection().
+Traceback (most recent call last):
+  File "C:\Users\ilpopa\AppData\Local\Continuum\anaconda3\lib\site-packages\pika\adapters\blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.ConnectionClosedByBroker: (403, 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.')
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=800, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 53601), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000230B8037F60>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000230B8037F60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=800, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 53601), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=800, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 53601), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=800, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 53601), raddr=('127.0.0.1', 5672)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: error-arg=None; pending-error=ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+INFO:pika.connection:Connection setup terminated due to ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+ERROR:pika.adapters.utils.connection_workflow:AMQPConnector - reporting failure: AMQPConnectorAMQPHandshakeError: ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('::1', 5672, 0, 0)
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=800, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 53601), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=760, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 53602, 0, 0), raddr=('::1', 5672, 0, 0)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000230B80530B8>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000230B80530B8> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.io_services_utils:Aborting transport connection: state=1; <socket.socket fd=760, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 53602, 0, 0), raddr=('::1', 5672, 0, 0)>
+INFO:pika.adapters.utils.io_services_utils:_AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=760, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 53602, 0, 0), raddr=('::1', 5672, 0, 0)>
+INFO:pika.adapters.utils.io_services_utils:Deactivating transport: state=1; <socket.socket fd=760, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 53602, 0, 0), raddr=('::1', 5672, 0, 0)>
+INFO:pika.connection:AMQP stack terminated, failed to connect, or aborted: error-arg=None; pending-error=ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+INFO:pika.connection:Connection setup terminated due to ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+ERROR:pika.adapters.utils.connection_workflow:AMQPConnector - reporting failure: AMQPConnectorAMQPHandshakeError: ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+ERROR:pika.adapters.utils.connection_workflow:AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorAMQPHandshakeError: ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'; first exception - AMQPConnectorAMQPHandshakeError: ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'.
+ERROR:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorAMQPHandshakeError: ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'; first exception - AMQPConnectorAMQPHandshakeError: ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+INFO:pika.adapters.utils.io_services_utils:Closing transport socket and unlinking: state=3; <socket.socket fd=760, family=AddressFamily.AF_INET6, type=SocketKind.SOCK_STREAM, proto=6, laddr=('::1', 53602, 0, 0), raddr=('::1', 5672, 0, 0)>
+ERROR:pika.adapters.blocking_connection:Connection workflow failed: AMQPConnectionWorkflowFailed: 2 exceptions in all; last exception - AMQPConnectorAMQPHandshakeError: ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'; first exception - AMQPConnectorAMQPHandshakeError: ConnectionClosedByBroker: (403) 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.'
+ERROR:pika.adapters.blocking_connection:Error in _create_connection().
+Traceback (most recent call last):
+  File "C:\Users\ilpopa\AppData\Local\Continuum\anaconda3\lib\site-packages\pika\adapters\blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+pika.exceptions.ConnectionClosedByBroker: (403, 'ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.')
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=860, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 53982), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001EEA1E57F28>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001EEA1E57F28> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001EEA1E57F28> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001EEA1E57F28> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001EEA1E57F28> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '265e625b-169d-4a4d-9e41-c80acca36c19'
+INFO:root:Subscription from '4c130d34-7813-4540-a4e2-bb3ac83a0cdf' sent to '265e625b-169d-4a4d-9e41-c80acca36c19'
+INFO:root:Subscription from '4c130d34-7813-4540-a4e2-bb3ac83a0cdf' sent to '265e625b-169d-4a4d-9e41-c80acca36c19'
+INFO:root:Subscription from '4c130d34-7813-4540-a4e2-bb3ac83a0cdf' sent to '265e625b-169d-4a4d-9e41-c80acca36c19'
+INFO:root:Subscription from '4c130d34-7813-4540-a4e2-bb3ac83a0cdf' sent to '265e625b-169d-4a4d-9e41-c80acca36c19'
+INFO:root:Subscription from '4c130d34-7813-4540-a4e2-bb3ac83a0cdf' sent to '265e625b-169d-4a4d-9e41-c80acca36c19'
+INFO:root:Subscription from '4c130d34-7813-4540-a4e2-bb3ac83a0cdf' sent to '265e625b-169d-4a4d-9e41-c80acca36c19'
+INFO:root:Subscription from '4c130d34-7813-4540-a4e2-bb3ac83a0cdf' sent to '265e625b-169d-4a4d-9e41-c80acca36c19'
+INFO:root:Subscription from '4c130d34-7813-4540-a4e2-bb3ac83a0cdf' sent to '265e625b-169d-4a4d-9e41-c80acca36c19'
+INFO:root:Subscription from '4c130d34-7813-4540-a4e2-bb3ac83a0cdf' sent to '265e625b-169d-4a4d-9e41-c80acca36c19'
+INFO:root:Subscription from '4c130d34-7813-4540-a4e2-bb3ac83a0cdf' sent to '265e625b-169d-4a4d-9e41-c80acca36c19'
+INFO:root:Subscription from 'b92ee3e0-3f55-4be7-9883-f7eaa43d7a46' sent to '265e625b-169d-4a4d-9e41-c80acca36c19'
+INFO:root:Subscription from 'b92ee3e0-3f55-4be7-9883-f7eaa43d7a46' sent to '265e625b-169d-4a4d-9e41-c80acca36c19'
+INFO:root:Subscription from 'b92ee3e0-3f55-4be7-9883-f7eaa43d7a46' sent to '265e625b-169d-4a4d-9e41-c80acca36c19'
+INFO:root:Subscription from 'b92ee3e0-3f55-4be7-9883-f7eaa43d7a46' sent to '265e625b-169d-4a4d-9e41-c80acca36c19'
+INFO:root:Subscription from 'b92ee3e0-3f55-4be7-9883-f7eaa43d7a46' sent to '265e625b-169d-4a4d-9e41-c80acca36c19'
+INFO:root:Subscription from 'b92ee3e0-3f55-4be7-9883-f7eaa43d7a46' sent to '265e625b-169d-4a4d-9e41-c80acca36c19'
+INFO:root:Subscription from 'b92ee3e0-3f55-4be7-9883-f7eaa43d7a46' sent to '265e625b-169d-4a4d-9e41-c80acca36c19'
+INFO:root:Subscription from 'b92ee3e0-3f55-4be7-9883-f7eaa43d7a46' sent to '265e625b-169d-4a4d-9e41-c80acca36c19'
+INFO:root:Subscription from 'b92ee3e0-3f55-4be7-9883-f7eaa43d7a46' sent to '265e625b-169d-4a4d-9e41-c80acca36c19'
+INFO:root:Subscription from 'b92ee3e0-3f55-4be7-9883-f7eaa43d7a46' sent to '265e625b-169d-4a4d-9e41-c80acca36c19'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=732, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 49516), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002D73B5D7F28>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002D73B5D7F28> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002D73B5D7F28> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002D73B5D7F28> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002D73B5D7F28> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '5aadbdf1-47f9-4391-bd45-f8fc16a03cf0'
+INFO:root:Registered broker with id '788a4140-4316-4f85-a6d3-66684a24d7af'
+INFO:root:Subscription from 'a460e52e-1a39-403f-8a10-c2a0a88d230f' sent to '5aadbdf1-47f9-4391-bd45-f8fc16a03cf0'
+INFO:root:Subscription from 'a460e52e-1a39-403f-8a10-c2a0a88d230f' sent to '788a4140-4316-4f85-a6d3-66684a24d7af'
+INFO:root:Subscription from 'a460e52e-1a39-403f-8a10-c2a0a88d230f' sent to '788a4140-4316-4f85-a6d3-66684a24d7af'
+INFO:root:Subscription from 'a460e52e-1a39-403f-8a10-c2a0a88d230f' sent to '5aadbdf1-47f9-4391-bd45-f8fc16a03cf0'
+INFO:root:Subscription from 'a460e52e-1a39-403f-8a10-c2a0a88d230f' sent to '788a4140-4316-4f85-a6d3-66684a24d7af'
+INFO:root:Subscription from 'a460e52e-1a39-403f-8a10-c2a0a88d230f' sent to '788a4140-4316-4f85-a6d3-66684a24d7af'
+INFO:root:Subscription from 'a460e52e-1a39-403f-8a10-c2a0a88d230f' sent to '5aadbdf1-47f9-4391-bd45-f8fc16a03cf0'
+INFO:root:Subscription from 'a460e52e-1a39-403f-8a10-c2a0a88d230f' sent to '788a4140-4316-4f85-a6d3-66684a24d7af'
+INFO:root:Subscription from 'a460e52e-1a39-403f-8a10-c2a0a88d230f' sent to '788a4140-4316-4f85-a6d3-66684a24d7af'
+INFO:root:Subscription from 'a460e52e-1a39-403f-8a10-c2a0a88d230f' sent to '5aadbdf1-47f9-4391-bd45-f8fc16a03cf0'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=804, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 49554), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001FA7A0D7F98>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001FA7A0D7F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001FA7A0D7F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001FA7A0D7F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001FA7A0D7F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id 'd7856dc4-1a15-4a6f-9421-6fdddf45fc3c'
+INFO:root:Registered broker with id '97c90d0c-065a-459b-8614-a501915cfff2'
+INFO:root:Subscription from '8f935ea1-44f9-4b06-84ce-ee1fabe0ca0a' sent to 'd7856dc4-1a15-4a6f-9421-6fdddf45fc3c'
+INFO:root:Subscription from '8f935ea1-44f9-4b06-84ce-ee1fabe0ca0a' sent to '97c90d0c-065a-459b-8614-a501915cfff2'
+INFO:root:Subscription from '8f935ea1-44f9-4b06-84ce-ee1fabe0ca0a' sent to '97c90d0c-065a-459b-8614-a501915cfff2'
+INFO:root:Subscription from '8f935ea1-44f9-4b06-84ce-ee1fabe0ca0a' sent to 'd7856dc4-1a15-4a6f-9421-6fdddf45fc3c'
+INFO:root:Subscription from '8f935ea1-44f9-4b06-84ce-ee1fabe0ca0a' sent to '97c90d0c-065a-459b-8614-a501915cfff2'
+INFO:root:Subscription from '8f935ea1-44f9-4b06-84ce-ee1fabe0ca0a' sent to '97c90d0c-065a-459b-8614-a501915cfff2'
+INFO:root:Subscription from '8f935ea1-44f9-4b06-84ce-ee1fabe0ca0a' sent to 'd7856dc4-1a15-4a6f-9421-6fdddf45fc3c'
+INFO:root:Subscription from '8f935ea1-44f9-4b06-84ce-ee1fabe0ca0a' sent to '97c90d0c-065a-459b-8614-a501915cfff2'
+INFO:root:Subscription from '8f935ea1-44f9-4b06-84ce-ee1fabe0ca0a' sent to '97c90d0c-065a-459b-8614-a501915cfff2'
+INFO:root:Subscription from '8f935ea1-44f9-4b06-84ce-ee1fabe0ca0a' sent to 'd7856dc4-1a15-4a6f-9421-6fdddf45fc3c'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=712, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 64340), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000024B393E7F60>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000024B393E7F60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000024B393E7F60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000024B393E7F60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000024B393E7F60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id 'dbb82164-4917-4488-83ed-cae3a37e6543'
+INFO:root:Registered broker with id '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from '4eb31fbd-617b-4309-b1f2-e76a9ccbade4' sent to 'dbb82164-4917-4488-83ed-cae3a37e6543'
+INFO:root:Subscription from '4eb31fbd-617b-4309-b1f2-e76a9ccbade4' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from '4eb31fbd-617b-4309-b1f2-e76a9ccbade4' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from '4eb31fbd-617b-4309-b1f2-e76a9ccbade4' sent to 'dbb82164-4917-4488-83ed-cae3a37e6543'
+INFO:root:Subscription from '4eb31fbd-617b-4309-b1f2-e76a9ccbade4' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from '4eb31fbd-617b-4309-b1f2-e76a9ccbade4' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from '4eb31fbd-617b-4309-b1f2-e76a9ccbade4' sent to 'dbb82164-4917-4488-83ed-cae3a37e6543'
+INFO:root:Subscription from '4eb31fbd-617b-4309-b1f2-e76a9ccbade4' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from '4eb31fbd-617b-4309-b1f2-e76a9ccbade4' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from '4eb31fbd-617b-4309-b1f2-e76a9ccbade4' sent to 'dbb82164-4917-4488-83ed-cae3a37e6543'
+INFO:root:Subscription from 'e7685db0-cae6-4f03-9888-82e53764320d' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from 'e7685db0-cae6-4f03-9888-82e53764320d' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from 'e7685db0-cae6-4f03-9888-82e53764320d' sent to 'dbb82164-4917-4488-83ed-cae3a37e6543'
+INFO:root:Subscription from 'e7685db0-cae6-4f03-9888-82e53764320d' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from 'e7685db0-cae6-4f03-9888-82e53764320d' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from 'e7685db0-cae6-4f03-9888-82e53764320d' sent to 'dbb82164-4917-4488-83ed-cae3a37e6543'
+INFO:root:Subscription from 'e7685db0-cae6-4f03-9888-82e53764320d' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from 'e7685db0-cae6-4f03-9888-82e53764320d' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from 'e7685db0-cae6-4f03-9888-82e53764320d' sent to 'dbb82164-4917-4488-83ed-cae3a37e6543'
+INFO:root:Subscription from 'e7685db0-cae6-4f03-9888-82e53764320d' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from 'df118a1b-f994-453b-9d94-479500ea0bf1' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from 'df118a1b-f994-453b-9d94-479500ea0bf1' sent to 'dbb82164-4917-4488-83ed-cae3a37e6543'
+INFO:root:Subscription from 'df118a1b-f994-453b-9d94-479500ea0bf1' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from 'df118a1b-f994-453b-9d94-479500ea0bf1' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from 'df118a1b-f994-453b-9d94-479500ea0bf1' sent to 'dbb82164-4917-4488-83ed-cae3a37e6543'
+INFO:root:Subscription from 'df118a1b-f994-453b-9d94-479500ea0bf1' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from 'df118a1b-f994-453b-9d94-479500ea0bf1' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from 'df118a1b-f994-453b-9d94-479500ea0bf1' sent to 'dbb82164-4917-4488-83ed-cae3a37e6543'
+INFO:root:Subscription from 'df118a1b-f994-453b-9d94-479500ea0bf1' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from 'df118a1b-f994-453b-9d94-479500ea0bf1' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from 'd5ee69b3-f88a-4a2c-9163-a80f4f316b7a' sent to 'dbb82164-4917-4488-83ed-cae3a37e6543'
+INFO:root:Subscription from 'd5ee69b3-f88a-4a2c-9163-a80f4f316b7a' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from 'd5ee69b3-f88a-4a2c-9163-a80f4f316b7a' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from 'd5ee69b3-f88a-4a2c-9163-a80f4f316b7a' sent to 'dbb82164-4917-4488-83ed-cae3a37e6543'
+INFO:root:Subscription from 'd5ee69b3-f88a-4a2c-9163-a80f4f316b7a' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from 'd5ee69b3-f88a-4a2c-9163-a80f4f316b7a' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from 'd5ee69b3-f88a-4a2c-9163-a80f4f316b7a' sent to 'dbb82164-4917-4488-83ed-cae3a37e6543'
+INFO:root:Subscription from 'd5ee69b3-f88a-4a2c-9163-a80f4f316b7a' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from 'd5ee69b3-f88a-4a2c-9163-a80f4f316b7a' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from 'd5ee69b3-f88a-4a2c-9163-a80f4f316b7a' sent to 'dbb82164-4917-4488-83ed-cae3a37e6543'
+INFO:root:Subscription from '46c78ae1-7e0d-46a7-85cb-1fae9dd0818f' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from '46c78ae1-7e0d-46a7-85cb-1fae9dd0818f' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from '46c78ae1-7e0d-46a7-85cb-1fae9dd0818f' sent to 'dbb82164-4917-4488-83ed-cae3a37e6543'
+INFO:root:Subscription from '46c78ae1-7e0d-46a7-85cb-1fae9dd0818f' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from '46c78ae1-7e0d-46a7-85cb-1fae9dd0818f' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from '46c78ae1-7e0d-46a7-85cb-1fae9dd0818f' sent to 'dbb82164-4917-4488-83ed-cae3a37e6543'
+INFO:root:Subscription from '46c78ae1-7e0d-46a7-85cb-1fae9dd0818f' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from '46c78ae1-7e0d-46a7-85cb-1fae9dd0818f' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Subscription from '46c78ae1-7e0d-46a7-85cb-1fae9dd0818f' sent to 'dbb82164-4917-4488-83ed-cae3a37e6543'
+INFO:root:Subscription from '46c78ae1-7e0d-46a7-85cb-1fae9dd0818f' sent to '2e248ddc-6c88-45bb-ab15-92bcbb22788b'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=840, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 64383), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C4BFC57F98>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C4BFC57F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C4BFC57F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C4BFC57F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C4BFC57F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '8bbf7fc2-120e-4af6-9442-112413650466'
+INFO:root:Registered broker with id 'e289b1cb-16ff-42d2-8620-0448aa168eae'
+INFO:root:Subscription from 'ba3942e9-39b5-4046-8482-384437ededc6' sent to '8bbf7fc2-120e-4af6-9442-112413650466'
+INFO:root:Subscription from 'ba3942e9-39b5-4046-8482-384437ededc6' sent to 'e289b1cb-16ff-42d2-8620-0448aa168eae'
+INFO:root:Subscription from 'ba3942e9-39b5-4046-8482-384437ededc6' sent to 'e289b1cb-16ff-42d2-8620-0448aa168eae'
+INFO:root:Subscription from 'ba3942e9-39b5-4046-8482-384437ededc6' sent to '8bbf7fc2-120e-4af6-9442-112413650466'
+INFO:root:Subscription from 'ba3942e9-39b5-4046-8482-384437ededc6' sent to 'e289b1cb-16ff-42d2-8620-0448aa168eae'
+INFO:root:Subscription from 'ba3942e9-39b5-4046-8482-384437ededc6' sent to 'e289b1cb-16ff-42d2-8620-0448aa168eae'
+INFO:root:Subscription from 'ba3942e9-39b5-4046-8482-384437ededc6' sent to '8bbf7fc2-120e-4af6-9442-112413650466'
+INFO:root:Subscription from 'ba3942e9-39b5-4046-8482-384437ededc6' sent to 'e289b1cb-16ff-42d2-8620-0448aa168eae'
+INFO:root:Subscription from 'ba3942e9-39b5-4046-8482-384437ededc6' sent to 'e289b1cb-16ff-42d2-8620-0448aa168eae'
+INFO:root:Subscription from 'ba3942e9-39b5-4046-8482-384437ededc6' sent to '8bbf7fc2-120e-4af6-9442-112413650466'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=884, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 64473), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002507D6A7F98>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002507D6A7F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002507D6A7F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002507D6A7F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002507D6A7F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '944fad98-9747-47ac-8865-fd0c9029d46e'
+INFO:root:Registered broker with id '01cb4f38-b23a-4c52-9724-209c807b0da1'
+INFO:root:Subscription from '9ed08d66-3517-41cd-9221-5315e6fcb8b2' sent to '944fad98-9747-47ac-8865-fd0c9029d46e'
+INFO:root:Subscription from '9ed08d66-3517-41cd-9221-5315e6fcb8b2' sent to '01cb4f38-b23a-4c52-9724-209c807b0da1'
+INFO:root:Subscription from '9ed08d66-3517-41cd-9221-5315e6fcb8b2' sent to '01cb4f38-b23a-4c52-9724-209c807b0da1'
+INFO:root:Subscription from '9ed08d66-3517-41cd-9221-5315e6fcb8b2' sent to '944fad98-9747-47ac-8865-fd0c9029d46e'
+INFO:root:Subscription from '9ed08d66-3517-41cd-9221-5315e6fcb8b2' sent to '01cb4f38-b23a-4c52-9724-209c807b0da1'
+INFO:root:Subscription from '9ed08d66-3517-41cd-9221-5315e6fcb8b2' sent to '01cb4f38-b23a-4c52-9724-209c807b0da1'
+INFO:root:Subscription from '9ed08d66-3517-41cd-9221-5315e6fcb8b2' sent to '944fad98-9747-47ac-8865-fd0c9029d46e'
+INFO:root:Subscription from '9ed08d66-3517-41cd-9221-5315e6fcb8b2' sent to '01cb4f38-b23a-4c52-9724-209c807b0da1'
+INFO:root:Subscription from '9ed08d66-3517-41cd-9221-5315e6fcb8b2' sent to '01cb4f38-b23a-4c52-9724-209c807b0da1'
+INFO:root:Subscription from '9ed08d66-3517-41cd-9221-5315e6fcb8b2' sent to '944fad98-9747-47ac-8865-fd0c9029d46e'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=796, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 64503), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001D7F97F7F98>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001D7F97F7F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001D7F97F7F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001D7F97F7F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001D7F97F7F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '4599656b-123b-4561-9096-35226e1e54b0'
+INFO:root:Registered broker with id 'a9573f43-5588-4a88-908d-b72c7e29cb62'
+INFO:root:Subscription from '71db7c33-9447-4ff1-ad72-1248072735f1' sent to '4599656b-123b-4561-9096-35226e1e54b0'
+INFO:root:Subscription from '71db7c33-9447-4ff1-ad72-1248072735f1' sent to 'a9573f43-5588-4a88-908d-b72c7e29cb62'
+INFO:root:Subscription from '71db7c33-9447-4ff1-ad72-1248072735f1' sent to 'a9573f43-5588-4a88-908d-b72c7e29cb62'
+INFO:root:Subscription from '71db7c33-9447-4ff1-ad72-1248072735f1' sent to '4599656b-123b-4561-9096-35226e1e54b0'
+INFO:root:Subscription from '71db7c33-9447-4ff1-ad72-1248072735f1' sent to 'a9573f43-5588-4a88-908d-b72c7e29cb62'
+INFO:root:Subscription from '71db7c33-9447-4ff1-ad72-1248072735f1' sent to 'a9573f43-5588-4a88-908d-b72c7e29cb62'
+INFO:root:Subscription from '71db7c33-9447-4ff1-ad72-1248072735f1' sent to '4599656b-123b-4561-9096-35226e1e54b0'
+INFO:root:Subscription from '71db7c33-9447-4ff1-ad72-1248072735f1' sent to 'a9573f43-5588-4a88-908d-b72c7e29cb62'
+INFO:root:Subscription from '71db7c33-9447-4ff1-ad72-1248072735f1' sent to 'a9573f43-5588-4a88-908d-b72c7e29cb62'
+INFO:root:Subscription from '71db7c33-9447-4ff1-ad72-1248072735f1' sent to '4599656b-123b-4561-9096-35226e1e54b0'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=800, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 49241), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000251DF3F7F60>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000251DF3F7F60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000251DF3F7F60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000251DF3F7F60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000251DF3F7F60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '632dc619-b84b-4020-9f1b-6cb407c63aa7'
+INFO:root:Registered broker with id '3ea3fade-41dc-4d27-8a4d-deca7515e86a'
+INFO:root:Subscription from 'fd4cde34-c0b7-4ed1-b3b0-2ab00eae7308' sent to '632dc619-b84b-4020-9f1b-6cb407c63aa7'
+INFO:root:Subscription from 'fd4cde34-c0b7-4ed1-b3b0-2ab00eae7308' sent to '3ea3fade-41dc-4d27-8a4d-deca7515e86a'
+INFO:root:Subscription from 'fd4cde34-c0b7-4ed1-b3b0-2ab00eae7308' sent to '3ea3fade-41dc-4d27-8a4d-deca7515e86a'
+INFO:root:Subscription from 'fd4cde34-c0b7-4ed1-b3b0-2ab00eae7308' sent to '632dc619-b84b-4020-9f1b-6cb407c63aa7'
+INFO:root:Subscription from 'fd4cde34-c0b7-4ed1-b3b0-2ab00eae7308' sent to '3ea3fade-41dc-4d27-8a4d-deca7515e86a'
+INFO:root:Subscription from 'fd4cde34-c0b7-4ed1-b3b0-2ab00eae7308' sent to '3ea3fade-41dc-4d27-8a4d-deca7515e86a'
+INFO:root:Subscription from 'fd4cde34-c0b7-4ed1-b3b0-2ab00eae7308' sent to '632dc619-b84b-4020-9f1b-6cb407c63aa7'
+INFO:root:Subscription from 'fd4cde34-c0b7-4ed1-b3b0-2ab00eae7308' sent to '3ea3fade-41dc-4d27-8a4d-deca7515e86a'
+INFO:root:Subscription from 'fd4cde34-c0b7-4ed1-b3b0-2ab00eae7308' sent to '3ea3fade-41dc-4d27-8a4d-deca7515e86a'
+INFO:root:Subscription from 'fd4cde34-c0b7-4ed1-b3b0-2ab00eae7308' sent to '632dc619-b84b-4020-9f1b-6cb407c63aa7'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=700, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 64490), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000186AECE7DD8>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000186AECE7DD8> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000186AECE7DD8> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000186AECE7DD8> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000186AECE7DD8> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '30254b5b-2f6e-4126-8a9d-478a6b819bae'
+INFO:root:Registered broker with id '2878f169-78b9-4438-bdb4-a9e11d871d93'
+INFO:root:Subscription from '315a3a5e-f8ea-46a7-9344-9c528d0ca533' sent to '30254b5b-2f6e-4126-8a9d-478a6b819bae'
+INFO:root:Subscription from '315a3a5e-f8ea-46a7-9344-9c528d0ca533' sent to '2878f169-78b9-4438-bdb4-a9e11d871d93'
+INFO:root:Subscription from '315a3a5e-f8ea-46a7-9344-9c528d0ca533' sent to '2878f169-78b9-4438-bdb4-a9e11d871d93'
+INFO:root:Subscription from '315a3a5e-f8ea-46a7-9344-9c528d0ca533' sent to '30254b5b-2f6e-4126-8a9d-478a6b819bae'
+INFO:root:Subscription from '315a3a5e-f8ea-46a7-9344-9c528d0ca533' sent to '2878f169-78b9-4438-bdb4-a9e11d871d93'
+INFO:root:Subscription from '315a3a5e-f8ea-46a7-9344-9c528d0ca533' sent to '2878f169-78b9-4438-bdb4-a9e11d871d93'
+INFO:root:Subscription from '315a3a5e-f8ea-46a7-9344-9c528d0ca533' sent to '30254b5b-2f6e-4126-8a9d-478a6b819bae'
+INFO:root:Subscription from '315a3a5e-f8ea-46a7-9344-9c528d0ca533' sent to '2878f169-78b9-4438-bdb4-a9e11d871d93'
+INFO:root:Subscription from '315a3a5e-f8ea-46a7-9344-9c528d0ca533' sent to '2878f169-78b9-4438-bdb4-a9e11d871d93'
+INFO:root:Subscription from '315a3a5e-f8ea-46a7-9344-9c528d0ca533' sent to '30254b5b-2f6e-4126-8a9d-478a6b819bae'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=460, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 49231), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000014D9F3C8FD0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000014D9F3C8FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000014D9F3C8FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000014D9F3C8FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000014D9F3C8FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '0867d26d-ece9-4bcc-88a4-1147f9963140'
+INFO:root:Registered broker with id '952a25d9-1e09-45ba-9c54-beeabfcf8f4e'
+INFO:root:Subscription from '6b999959-ce86-46ed-81fc-e519ad6997b5' sent to '0867d26d-ece9-4bcc-88a4-1147f9963140'
+INFO:root:Subscription from '6b999959-ce86-46ed-81fc-e519ad6997b5' sent to '952a25d9-1e09-45ba-9c54-beeabfcf8f4e'
+INFO:root:Subscription from '6b999959-ce86-46ed-81fc-e519ad6997b5' sent to '952a25d9-1e09-45ba-9c54-beeabfcf8f4e'
+INFO:root:Subscription from '6b999959-ce86-46ed-81fc-e519ad6997b5' sent to '0867d26d-ece9-4bcc-88a4-1147f9963140'
+INFO:root:Subscription from '6b999959-ce86-46ed-81fc-e519ad6997b5' sent to '952a25d9-1e09-45ba-9c54-beeabfcf8f4e'
+INFO:root:Subscription from '6b999959-ce86-46ed-81fc-e519ad6997b5' sent to '952a25d9-1e09-45ba-9c54-beeabfcf8f4e'
+INFO:root:Subscription from '6b999959-ce86-46ed-81fc-e519ad6997b5' sent to '0867d26d-ece9-4bcc-88a4-1147f9963140'
+INFO:root:Subscription from '6b999959-ce86-46ed-81fc-e519ad6997b5' sent to '952a25d9-1e09-45ba-9c54-beeabfcf8f4e'
+INFO:root:Subscription from '6b999959-ce86-46ed-81fc-e519ad6997b5' sent to '952a25d9-1e09-45ba-9c54-beeabfcf8f4e'
+INFO:root:Subscription from '6b999959-ce86-46ed-81fc-e519ad6997b5' sent to '0867d26d-ece9-4bcc-88a4-1147f9963140'
+INFO:root:Subscription from '9150521f-43bd-40ca-8a64-130fee367695' sent to '952a25d9-1e09-45ba-9c54-beeabfcf8f4e'
+INFO:root:Subscription from '9150521f-43bd-40ca-8a64-130fee367695' sent to '952a25d9-1e09-45ba-9c54-beeabfcf8f4e'
+INFO:root:Subscription from '9150521f-43bd-40ca-8a64-130fee367695' sent to '0867d26d-ece9-4bcc-88a4-1147f9963140'
+INFO:root:Subscription from '9150521f-43bd-40ca-8a64-130fee367695' sent to '952a25d9-1e09-45ba-9c54-beeabfcf8f4e'
+INFO:root:Subscription from '9150521f-43bd-40ca-8a64-130fee367695' sent to '952a25d9-1e09-45ba-9c54-beeabfcf8f4e'
+INFO:root:Subscription from '9150521f-43bd-40ca-8a64-130fee367695' sent to '0867d26d-ece9-4bcc-88a4-1147f9963140'
+INFO:root:Subscription from '9150521f-43bd-40ca-8a64-130fee367695' sent to '952a25d9-1e09-45ba-9c54-beeabfcf8f4e'
+INFO:root:Subscription from '9150521f-43bd-40ca-8a64-130fee367695' sent to '952a25d9-1e09-45ba-9c54-beeabfcf8f4e'
+INFO:root:Subscription from '9150521f-43bd-40ca-8a64-130fee367695' sent to '0867d26d-ece9-4bcc-88a4-1147f9963140'
+INFO:root:Subscription from '9150521f-43bd-40ca-8a64-130fee367695' sent to '952a25d9-1e09-45ba-9c54-beeabfcf8f4e'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=816, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 63754), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001464C0B7FD0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001464C0B7FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001464C0B7FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001464C0B7FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001464C0B7FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id 'b6042bb0-b5e4-4193-8291-a382f3dd4686'
+INFO:root:Registered broker with id 'd64cc82b-b8bd-46a9-88e5-6b96a752ec01'
+INFO:root:Subscription from 'dc260c63-820c-450f-865e-f2b22a2868aa' sent to 'b6042bb0-b5e4-4193-8291-a382f3dd4686'
+INFO:root:Subscription from 'dc260c63-820c-450f-865e-f2b22a2868aa' sent to 'd64cc82b-b8bd-46a9-88e5-6b96a752ec01'
+INFO:root:Subscription from 'dc260c63-820c-450f-865e-f2b22a2868aa' sent to 'd64cc82b-b8bd-46a9-88e5-6b96a752ec01'
+INFO:root:Subscription from 'dc260c63-820c-450f-865e-f2b22a2868aa' sent to 'b6042bb0-b5e4-4193-8291-a382f3dd4686'
+INFO:root:Subscription from 'dc260c63-820c-450f-865e-f2b22a2868aa' sent to 'd64cc82b-b8bd-46a9-88e5-6b96a752ec01'
+INFO:root:Subscription from 'dc260c63-820c-450f-865e-f2b22a2868aa' sent to 'd64cc82b-b8bd-46a9-88e5-6b96a752ec01'
+INFO:root:Subscription from 'dc260c63-820c-450f-865e-f2b22a2868aa' sent to 'b6042bb0-b5e4-4193-8291-a382f3dd4686'
+INFO:root:Subscription from 'dc260c63-820c-450f-865e-f2b22a2868aa' sent to 'd64cc82b-b8bd-46a9-88e5-6b96a752ec01'
+INFO:root:Subscription from 'dc260c63-820c-450f-865e-f2b22a2868aa' sent to 'd64cc82b-b8bd-46a9-88e5-6b96a752ec01'
+INFO:root:Subscription from 'dc260c63-820c-450f-865e-f2b22a2868aa' sent to 'b6042bb0-b5e4-4193-8291-a382f3dd4686'
+INFO:root:Subscription from '0921a3b0-24c8-467a-a322-321b2c6baa98' sent to 'd64cc82b-b8bd-46a9-88e5-6b96a752ec01'
+INFO:root:Subscription from '0921a3b0-24c8-467a-a322-321b2c6baa98' sent to 'd64cc82b-b8bd-46a9-88e5-6b96a752ec01'
+INFO:root:Subscription from '0921a3b0-24c8-467a-a322-321b2c6baa98' sent to 'b6042bb0-b5e4-4193-8291-a382f3dd4686'
+INFO:root:Subscription from '0921a3b0-24c8-467a-a322-321b2c6baa98' sent to 'd64cc82b-b8bd-46a9-88e5-6b96a752ec01'
+INFO:root:Subscription from '0921a3b0-24c8-467a-a322-321b2c6baa98' sent to 'd64cc82b-b8bd-46a9-88e5-6b96a752ec01'
+INFO:root:Subscription from '0921a3b0-24c8-467a-a322-321b2c6baa98' sent to 'b6042bb0-b5e4-4193-8291-a382f3dd4686'
+INFO:root:Subscription from '0921a3b0-24c8-467a-a322-321b2c6baa98' sent to 'd64cc82b-b8bd-46a9-88e5-6b96a752ec01'
+INFO:root:Subscription from '0921a3b0-24c8-467a-a322-321b2c6baa98' sent to 'd64cc82b-b8bd-46a9-88e5-6b96a752ec01'
+INFO:root:Subscription from '0921a3b0-24c8-467a-a322-321b2c6baa98' sent to 'b6042bb0-b5e4-4193-8291-a382f3dd4686'
+INFO:root:Subscription from '0921a3b0-24c8-467a-a322-321b2c6baa98' sent to 'd64cc82b-b8bd-46a9-88e5-6b96a752ec01'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=496, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 63854), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001A7AE126E48>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001A7AE126E48> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001A7AE126E48> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001A7AE126E48> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001A7AE126E48> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '3a6b9e7f-7458-406f-abe2-7897c0cd5c34'
+INFO:root:Registered broker with id '451ac38c-da06-4df9-aedf-758f238f6483'
+INFO:root:Subscription from 'a9671f93-8c59-4399-801e-96ead2c36b19' sent to '3a6b9e7f-7458-406f-abe2-7897c0cd5c34'
+INFO:root:Subscription from 'a9671f93-8c59-4399-801e-96ead2c36b19' sent to '451ac38c-da06-4df9-aedf-758f238f6483'
+INFO:root:Subscription from 'a9671f93-8c59-4399-801e-96ead2c36b19' sent to '451ac38c-da06-4df9-aedf-758f238f6483'
+INFO:root:Subscription from 'a9671f93-8c59-4399-801e-96ead2c36b19' sent to '3a6b9e7f-7458-406f-abe2-7897c0cd5c34'
+INFO:root:Subscription from 'a9671f93-8c59-4399-801e-96ead2c36b19' sent to '451ac38c-da06-4df9-aedf-758f238f6483'
+INFO:root:Subscription from 'a9671f93-8c59-4399-801e-96ead2c36b19' sent to '451ac38c-da06-4df9-aedf-758f238f6483'
+INFO:root:Subscription from 'a9671f93-8c59-4399-801e-96ead2c36b19' sent to '3a6b9e7f-7458-406f-abe2-7897c0cd5c34'
+INFO:root:Subscription from 'a9671f93-8c59-4399-801e-96ead2c36b19' sent to '451ac38c-da06-4df9-aedf-758f238f6483'
+INFO:root:Subscription from 'a9671f93-8c59-4399-801e-96ead2c36b19' sent to '451ac38c-da06-4df9-aedf-758f238f6483'
+INFO:root:Subscription from 'a9671f93-8c59-4399-801e-96ead2c36b19' sent to '3a6b9e7f-7458-406f-abe2-7897c0cd5c34'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=740, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 64145), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001F2EEBB3240>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001F2EEBB3240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001F2EEBB3240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001F2EEBB3240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001F2EEBB3240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '19690c1c-456d-4350-a3fb-fe60e9db558a'
+INFO:root:Registered broker with id 'ea207edb-3452-4a90-8708-f048e7e8447c'
+INFO:root:Subscription from 'd75add62-aefa-4e9e-b095-a82f150eccc7' sent to '19690c1c-456d-4350-a3fb-fe60e9db558a'
+INFO:root:Subscription from 'd75add62-aefa-4e9e-b095-a82f150eccc7' sent to 'ea207edb-3452-4a90-8708-f048e7e8447c'
+INFO:root:Subscription from 'd75add62-aefa-4e9e-b095-a82f150eccc7' sent to 'ea207edb-3452-4a90-8708-f048e7e8447c'
+INFO:root:Subscription from 'd75add62-aefa-4e9e-b095-a82f150eccc7' sent to '19690c1c-456d-4350-a3fb-fe60e9db558a'
+INFO:root:Subscription from 'd75add62-aefa-4e9e-b095-a82f150eccc7' sent to 'ea207edb-3452-4a90-8708-f048e7e8447c'
+INFO:root:Subscription from 'd75add62-aefa-4e9e-b095-a82f150eccc7' sent to 'ea207edb-3452-4a90-8708-f048e7e8447c'
+INFO:root:Subscription from 'd75add62-aefa-4e9e-b095-a82f150eccc7' sent to '19690c1c-456d-4350-a3fb-fe60e9db558a'
+INFO:root:Subscription from 'd75add62-aefa-4e9e-b095-a82f150eccc7' sent to 'ea207edb-3452-4a90-8708-f048e7e8447c'
+INFO:root:Subscription from 'd75add62-aefa-4e9e-b095-a82f150eccc7' sent to 'ea207edb-3452-4a90-8708-f048e7e8447c'
+INFO:root:Subscription from 'd75add62-aefa-4e9e-b095-a82f150eccc7' sent to '19690c1c-456d-4350-a3fb-fe60e9db558a'
+INFO:root:Subscription from '562528ad-a7c8-4b55-9d39-cbc9ec972e1d' sent to 'ea207edb-3452-4a90-8708-f048e7e8447c'
+INFO:root:Subscription from '562528ad-a7c8-4b55-9d39-cbc9ec972e1d' sent to 'ea207edb-3452-4a90-8708-f048e7e8447c'
+INFO:root:Subscription from '562528ad-a7c8-4b55-9d39-cbc9ec972e1d' sent to '19690c1c-456d-4350-a3fb-fe60e9db558a'
+INFO:root:Subscription from '562528ad-a7c8-4b55-9d39-cbc9ec972e1d' sent to 'ea207edb-3452-4a90-8708-f048e7e8447c'
+INFO:root:Subscription from '562528ad-a7c8-4b55-9d39-cbc9ec972e1d' sent to 'ea207edb-3452-4a90-8708-f048e7e8447c'
+INFO:root:Subscription from '562528ad-a7c8-4b55-9d39-cbc9ec972e1d' sent to '19690c1c-456d-4350-a3fb-fe60e9db558a'
+INFO:root:Subscription from '562528ad-a7c8-4b55-9d39-cbc9ec972e1d' sent to 'ea207edb-3452-4a90-8708-f048e7e8447c'
+INFO:root:Subscription from '562528ad-a7c8-4b55-9d39-cbc9ec972e1d' sent to 'ea207edb-3452-4a90-8708-f048e7e8447c'
+INFO:root:Subscription from '562528ad-a7c8-4b55-9d39-cbc9ec972e1d' sent to '19690c1c-456d-4350-a3fb-fe60e9db558a'
+INFO:root:Subscription from '562528ad-a7c8-4b55-9d39-cbc9ec972e1d' sent to 'ea207edb-3452-4a90-8708-f048e7e8447c'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=792, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 64197), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002B262576E80>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002B262576E80> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002B262576E80> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002B262576E80> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002B262576E80> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '8545e23e-d1d4-4531-8598-af7651d7d028'
+INFO:root:Registered broker with id 'e52ede1d-413b-4dc0-9a7e-fda178016f3e'
+INFO:root:Subscription from '41d366e4-445c-4527-a190-b511ccac159d' sent to '8545e23e-d1d4-4531-8598-af7651d7d028'
+INFO:root:Subscription from '41d366e4-445c-4527-a190-b511ccac159d' sent to 'e52ede1d-413b-4dc0-9a7e-fda178016f3e'
+INFO:root:Subscription from '41d366e4-445c-4527-a190-b511ccac159d' sent to 'e52ede1d-413b-4dc0-9a7e-fda178016f3e'
+INFO:root:Subscription from '41d366e4-445c-4527-a190-b511ccac159d' sent to '8545e23e-d1d4-4531-8598-af7651d7d028'
+INFO:root:Subscription from '41d366e4-445c-4527-a190-b511ccac159d' sent to 'e52ede1d-413b-4dc0-9a7e-fda178016f3e'
+INFO:root:Subscription from '41d366e4-445c-4527-a190-b511ccac159d' sent to 'e52ede1d-413b-4dc0-9a7e-fda178016f3e'
+INFO:root:Subscription from '41d366e4-445c-4527-a190-b511ccac159d' sent to '8545e23e-d1d4-4531-8598-af7651d7d028'
+INFO:root:Subscription from '41d366e4-445c-4527-a190-b511ccac159d' sent to 'e52ede1d-413b-4dc0-9a7e-fda178016f3e'
+INFO:root:Subscription from '41d366e4-445c-4527-a190-b511ccac159d' sent to 'e52ede1d-413b-4dc0-9a7e-fda178016f3e'
+INFO:root:Subscription from '41d366e4-445c-4527-a190-b511ccac159d' sent to '8545e23e-d1d4-4531-8598-af7651d7d028'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=792, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 64228), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C04A8F7FD0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C04A8F7FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C04A8F7FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C04A8F7FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C04A8F7FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '3079c7c8-8959-42d6-8a85-50696854a67b'
+INFO:root:Registered broker with id '901dab9a-afbd-49a3-8958-735d314a844b'
+INFO:root:Subscription from '3006a212-c494-40a3-b237-c3b56d0d7680' sent to '3079c7c8-8959-42d6-8a85-50696854a67b'
+INFO:root:Subscription from '3006a212-c494-40a3-b237-c3b56d0d7680' sent to '901dab9a-afbd-49a3-8958-735d314a844b'
+INFO:root:Subscription from '3006a212-c494-40a3-b237-c3b56d0d7680' sent to '901dab9a-afbd-49a3-8958-735d314a844b'
+INFO:root:Subscription from '3006a212-c494-40a3-b237-c3b56d0d7680' sent to '3079c7c8-8959-42d6-8a85-50696854a67b'
+INFO:root:Subscription from '3006a212-c494-40a3-b237-c3b56d0d7680' sent to '901dab9a-afbd-49a3-8958-735d314a844b'
+INFO:root:Subscription from '3006a212-c494-40a3-b237-c3b56d0d7680' sent to '901dab9a-afbd-49a3-8958-735d314a844b'
+INFO:root:Subscription from '3006a212-c494-40a3-b237-c3b56d0d7680' sent to '3079c7c8-8959-42d6-8a85-50696854a67b'
+INFO:root:Subscription from '3006a212-c494-40a3-b237-c3b56d0d7680' sent to '901dab9a-afbd-49a3-8958-735d314a844b'
+INFO:root:Subscription from '3006a212-c494-40a3-b237-c3b56d0d7680' sent to '901dab9a-afbd-49a3-8958-735d314a844b'
+INFO:root:Subscription from '3006a212-c494-40a3-b237-c3b56d0d7680' sent to '3079c7c8-8959-42d6-8a85-50696854a67b'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 64281), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000026194E77D68>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000026194E77D68> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000026194E77D68> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000026194E77D68> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000026194E77D68> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '438a19c0-8785-4d46-a112-4cb2cd87d51b'
+INFO:root:Registered broker with id 'bc226f7b-a46e-4155-8f99-d68a88fe29de'
+INFO:root:Subscription from 'ded49db5-58aa-4384-ada7-da5c0cc01599' sent to '438a19c0-8785-4d46-a112-4cb2cd87d51b'
+INFO:root:Subscription from 'ded49db5-58aa-4384-ada7-da5c0cc01599' sent to 'bc226f7b-a46e-4155-8f99-d68a88fe29de'
+INFO:root:Subscription from 'ded49db5-58aa-4384-ada7-da5c0cc01599' sent to 'bc226f7b-a46e-4155-8f99-d68a88fe29de'
+INFO:root:Subscription from 'ded49db5-58aa-4384-ada7-da5c0cc01599' sent to '438a19c0-8785-4d46-a112-4cb2cd87d51b'
+INFO:root:Subscription from 'ded49db5-58aa-4384-ada7-da5c0cc01599' sent to 'bc226f7b-a46e-4155-8f99-d68a88fe29de'
+INFO:root:Subscription from 'ded49db5-58aa-4384-ada7-da5c0cc01599' sent to 'bc226f7b-a46e-4155-8f99-d68a88fe29de'
+INFO:root:Subscription from 'ded49db5-58aa-4384-ada7-da5c0cc01599' sent to '438a19c0-8785-4d46-a112-4cb2cd87d51b'
+INFO:root:Subscription from 'ded49db5-58aa-4384-ada7-da5c0cc01599' sent to 'bc226f7b-a46e-4155-8f99-d68a88fe29de'
+INFO:root:Subscription from 'ded49db5-58aa-4384-ada7-da5c0cc01599' sent to 'bc226f7b-a46e-4155-8f99-d68a88fe29de'
+INFO:root:Subscription from 'ded49db5-58aa-4384-ada7-da5c0cc01599' sent to '438a19c0-8785-4d46-a112-4cb2cd87d51b'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=780, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 64374), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001BDC4087FD0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001BDC4087FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001BDC4087FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001BDC4087FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001BDC4087FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=804, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 64398), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001FAE37E7F98>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001FAE37E7F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001FAE37E7F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001FAE37E7F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001FAE37E7F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id 'fad4c6e3-b281-4232-8718-e9ca456cd97a'
+INFO:root:Registered broker with id '5904cfe0-848d-420d-bb17-41e0b9534a3d'
+INFO:root:Subscription from '56b141b7-06ac-4657-9c6f-3acb4ef52757' sent to 'fad4c6e3-b281-4232-8718-e9ca456cd97a'
+INFO:root:Subscription from '56b141b7-06ac-4657-9c6f-3acb4ef52757' sent to '5904cfe0-848d-420d-bb17-41e0b9534a3d'
+INFO:root:Subscription from '56b141b7-06ac-4657-9c6f-3acb4ef52757' sent to '5904cfe0-848d-420d-bb17-41e0b9534a3d'
+INFO:root:Subscription from '56b141b7-06ac-4657-9c6f-3acb4ef52757' sent to 'fad4c6e3-b281-4232-8718-e9ca456cd97a'
+INFO:root:Subscription from '56b141b7-06ac-4657-9c6f-3acb4ef52757' sent to '5904cfe0-848d-420d-bb17-41e0b9534a3d'
+INFO:root:Subscription from '56b141b7-06ac-4657-9c6f-3acb4ef52757' sent to '5904cfe0-848d-420d-bb17-41e0b9534a3d'
+INFO:root:Subscription from '56b141b7-06ac-4657-9c6f-3acb4ef52757' sent to 'fad4c6e3-b281-4232-8718-e9ca456cd97a'
+INFO:root:Subscription from '56b141b7-06ac-4657-9c6f-3acb4ef52757' sent to '5904cfe0-848d-420d-bb17-41e0b9534a3d'
+INFO:root:Subscription from '56b141b7-06ac-4657-9c6f-3acb4ef52757' sent to '5904cfe0-848d-420d-bb17-41e0b9534a3d'
+INFO:root:Subscription from '56b141b7-06ac-4657-9c6f-3acb4ef52757' sent to 'fad4c6e3-b281-4232-8718-e9ca456cd97a'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 64432), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000022E97383240>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000022E97383240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000022E97383240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000022E97383240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000022E97383240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id 'ff5dda69-8544-4689-8345-4b58d76ab879'
+INFO:root:Registered broker with id '936bf118-d17d-49f7-acb7-fc7da69d2411'
+INFO:root:Subscription from '8af54a9c-0dce-4c44-b810-6caefa767a65' sent to 'ff5dda69-8544-4689-8345-4b58d76ab879'
+INFO:root:Subscription from '8af54a9c-0dce-4c44-b810-6caefa767a65' sent to '936bf118-d17d-49f7-acb7-fc7da69d2411'
+INFO:root:Subscription from '8af54a9c-0dce-4c44-b810-6caefa767a65' sent to '936bf118-d17d-49f7-acb7-fc7da69d2411'
+INFO:root:Subscription from '8af54a9c-0dce-4c44-b810-6caefa767a65' sent to 'ff5dda69-8544-4689-8345-4b58d76ab879'
+INFO:root:Subscription from '8af54a9c-0dce-4c44-b810-6caefa767a65' sent to '936bf118-d17d-49f7-acb7-fc7da69d2411'
+INFO:root:Subscription from '8af54a9c-0dce-4c44-b810-6caefa767a65' sent to '936bf118-d17d-49f7-acb7-fc7da69d2411'
+INFO:root:Subscription from '8af54a9c-0dce-4c44-b810-6caefa767a65' sent to 'ff5dda69-8544-4689-8345-4b58d76ab879'
+INFO:root:Subscription from '8af54a9c-0dce-4c44-b810-6caefa767a65' sent to '936bf118-d17d-49f7-acb7-fc7da69d2411'
+INFO:root:Subscription from '8af54a9c-0dce-4c44-b810-6caefa767a65' sent to '936bf118-d17d-49f7-acb7-fc7da69d2411'
+INFO:root:Subscription from '8af54a9c-0dce-4c44-b810-6caefa767a65' sent to 'ff5dda69-8544-4689-8345-4b58d76ab879'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=728, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 64452), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002CB14103240>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002CB14103240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002CB14103240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002CB14103240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002CB14103240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '33c0ad6f-f732-4cd8-a40e-8f8cfc3847a3'
+INFO:root:Registered broker with id 'b8f0b963-3a10-4549-aa88-cb3d81ac3378'
+INFO:root:Subscription from '519648f1-efe3-4348-8e57-8fdd2e308a2c' sent to '33c0ad6f-f732-4cd8-a40e-8f8cfc3847a3'
+INFO:root:Subscription from '519648f1-efe3-4348-8e57-8fdd2e308a2c' sent to 'b8f0b963-3a10-4549-aa88-cb3d81ac3378'
+INFO:root:Subscription from '519648f1-efe3-4348-8e57-8fdd2e308a2c' sent to 'b8f0b963-3a10-4549-aa88-cb3d81ac3378'
+INFO:root:Subscription from '519648f1-efe3-4348-8e57-8fdd2e308a2c' sent to '33c0ad6f-f732-4cd8-a40e-8f8cfc3847a3'
+INFO:root:Subscription from '519648f1-efe3-4348-8e57-8fdd2e308a2c' sent to 'b8f0b963-3a10-4549-aa88-cb3d81ac3378'
+INFO:root:Subscription from '519648f1-efe3-4348-8e57-8fdd2e308a2c' sent to 'b8f0b963-3a10-4549-aa88-cb3d81ac3378'
+INFO:root:Subscription from '519648f1-efe3-4348-8e57-8fdd2e308a2c' sent to '33c0ad6f-f732-4cd8-a40e-8f8cfc3847a3'
+INFO:root:Subscription from '519648f1-efe3-4348-8e57-8fdd2e308a2c' sent to 'b8f0b963-3a10-4549-aa88-cb3d81ac3378'
+INFO:root:Subscription from '519648f1-efe3-4348-8e57-8fdd2e308a2c' sent to 'b8f0b963-3a10-4549-aa88-cb3d81ac3378'
+INFO:root:Subscription from '519648f1-efe3-4348-8e57-8fdd2e308a2c' sent to '33c0ad6f-f732-4cd8-a40e-8f8cfc3847a3'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=792, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 64490), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001F561547FD0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001F561547FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001F561547FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001F561547FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001F561547FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id 'e24dacff-8a68-47cd-9f08-26eb0ea54319'
+INFO:root:Registered broker with id '744e1eed-b867-4ef7-9131-32b1247ad66b'
+INFO:root:Subscription from 'facb1614-c04e-4683-b95a-b11801dbfbe9' sent to 'e24dacff-8a68-47cd-9f08-26eb0ea54319'
+INFO:root:Subscription from 'facb1614-c04e-4683-b95a-b11801dbfbe9' sent to '744e1eed-b867-4ef7-9131-32b1247ad66b'
+INFO:root:Subscription from 'facb1614-c04e-4683-b95a-b11801dbfbe9' sent to '744e1eed-b867-4ef7-9131-32b1247ad66b'
+INFO:root:Subscription from 'facb1614-c04e-4683-b95a-b11801dbfbe9' sent to 'e24dacff-8a68-47cd-9f08-26eb0ea54319'
+INFO:root:Subscription from 'facb1614-c04e-4683-b95a-b11801dbfbe9' sent to '744e1eed-b867-4ef7-9131-32b1247ad66b'
+INFO:root:Subscription from 'facb1614-c04e-4683-b95a-b11801dbfbe9' sent to '744e1eed-b867-4ef7-9131-32b1247ad66b'
+INFO:root:Subscription from 'facb1614-c04e-4683-b95a-b11801dbfbe9' sent to 'e24dacff-8a68-47cd-9f08-26eb0ea54319'
+INFO:root:Subscription from 'facb1614-c04e-4683-b95a-b11801dbfbe9' sent to '744e1eed-b867-4ef7-9131-32b1247ad66b'
+INFO:root:Subscription from 'facb1614-c04e-4683-b95a-b11801dbfbe9' sent to '744e1eed-b867-4ef7-9131-32b1247ad66b'
+INFO:root:Subscription from 'facb1614-c04e-4683-b95a-b11801dbfbe9' sent to 'e24dacff-8a68-47cd-9f08-26eb0ea54319'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=788, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 64573), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002137A277F60>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002137A277F60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002137A277F60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002137A277F60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000002137A277F60> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id 'f758f0c7-5bf3-47b5-bb9f-ce5f81fcbac6'
+INFO:root:Registered broker with id '38c8db37-1f0f-49fd-a3fb-523c5b9bedc2'
+INFO:root:Subscription from '74211d89-1370-470b-b9e1-4acd7804a816' sent to 'f758f0c7-5bf3-47b5-bb9f-ce5f81fcbac6'
+INFO:root:Subscription from '74211d89-1370-470b-b9e1-4acd7804a816' sent to '38c8db37-1f0f-49fd-a3fb-523c5b9bedc2'
+INFO:root:Subscription from '74211d89-1370-470b-b9e1-4acd7804a816' sent to '38c8db37-1f0f-49fd-a3fb-523c5b9bedc2'
+INFO:root:Subscription from '74211d89-1370-470b-b9e1-4acd7804a816' sent to 'f758f0c7-5bf3-47b5-bb9f-ce5f81fcbac6'
+INFO:root:Subscription from '74211d89-1370-470b-b9e1-4acd7804a816' sent to '38c8db37-1f0f-49fd-a3fb-523c5b9bedc2'
+INFO:root:Subscription from '74211d89-1370-470b-b9e1-4acd7804a816' sent to '38c8db37-1f0f-49fd-a3fb-523c5b9bedc2'
+INFO:root:Subscription from '74211d89-1370-470b-b9e1-4acd7804a816' sent to 'f758f0c7-5bf3-47b5-bb9f-ce5f81fcbac6'
+INFO:root:Subscription from '74211d89-1370-470b-b9e1-4acd7804a816' sent to '38c8db37-1f0f-49fd-a3fb-523c5b9bedc2'
+INFO:root:Subscription from '74211d89-1370-470b-b9e1-4acd7804a816' sent to '38c8db37-1f0f-49fd-a3fb-523c5b9bedc2'
+INFO:root:Subscription from '74211d89-1370-470b-b9e1-4acd7804a816' sent to 'f758f0c7-5bf3-47b5-bb9f-ce5f81fcbac6'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=804, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 64976), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001F62C843240>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001F62C843240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001F62C843240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001F62C843240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001F62C843240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '6f5b115c-54a5-4e6b-be47-11f96fd1c036'
+INFO:root:Registered broker with id '0d8dd102-8bf6-47d1-8c44-b50914b7be12'
+INFO:root:Subscription from 'f70347d8-c624-421c-8bfe-f128e1b2a48e' sent to '6f5b115c-54a5-4e6b-be47-11f96fd1c036'
+INFO:root:Subscription from 'f70347d8-c624-421c-8bfe-f128e1b2a48e' sent to '0d8dd102-8bf6-47d1-8c44-b50914b7be12'
+INFO:root:Subscription from 'f70347d8-c624-421c-8bfe-f128e1b2a48e' sent to '0d8dd102-8bf6-47d1-8c44-b50914b7be12'
+INFO:root:Subscription from 'f70347d8-c624-421c-8bfe-f128e1b2a48e' sent to '6f5b115c-54a5-4e6b-be47-11f96fd1c036'
+INFO:root:Subscription from 'f70347d8-c624-421c-8bfe-f128e1b2a48e' sent to '0d8dd102-8bf6-47d1-8c44-b50914b7be12'
+INFO:root:Subscription from 'f70347d8-c624-421c-8bfe-f128e1b2a48e' sent to '0d8dd102-8bf6-47d1-8c44-b50914b7be12'
+INFO:root:Subscription from 'f70347d8-c624-421c-8bfe-f128e1b2a48e' sent to '6f5b115c-54a5-4e6b-be47-11f96fd1c036'
+INFO:root:Subscription from 'f70347d8-c624-421c-8bfe-f128e1b2a48e' sent to '0d8dd102-8bf6-47d1-8c44-b50914b7be12'
+INFO:root:Subscription from 'f70347d8-c624-421c-8bfe-f128e1b2a48e' sent to '0d8dd102-8bf6-47d1-8c44-b50914b7be12'
+INFO:root:Subscription from 'f70347d8-c624-421c-8bfe-f128e1b2a48e' sent to '6f5b115c-54a5-4e6b-be47-11f96fd1c036'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=136, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 65017), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001DDA1B97FD0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001DDA1B97FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001DDA1B97FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001DDA1B97FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001DDA1B97FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '5b002385-3bb1-4e04-8513-93cdfd12a22d'
+INFO:root:Registered broker with id '48209a5b-fc02-477b-88f5-4428fa42c5c8'
+INFO:root:Subscription from '8f211093-b624-482d-a217-f89e83496daa' sent to '5b002385-3bb1-4e04-8513-93cdfd12a22d'
+INFO:root:Subscription from '8f211093-b624-482d-a217-f89e83496daa' sent to '48209a5b-fc02-477b-88f5-4428fa42c5c8'
+INFO:root:Subscription from '8f211093-b624-482d-a217-f89e83496daa' sent to '48209a5b-fc02-477b-88f5-4428fa42c5c8'
+INFO:root:Subscription from '8f211093-b624-482d-a217-f89e83496daa' sent to '5b002385-3bb1-4e04-8513-93cdfd12a22d'
+INFO:root:Subscription from '8f211093-b624-482d-a217-f89e83496daa' sent to '48209a5b-fc02-477b-88f5-4428fa42c5c8'
+INFO:root:Subscription from '8f211093-b624-482d-a217-f89e83496daa' sent to '48209a5b-fc02-477b-88f5-4428fa42c5c8'
+INFO:root:Subscription from '8f211093-b624-482d-a217-f89e83496daa' sent to '5b002385-3bb1-4e04-8513-93cdfd12a22d'
+INFO:root:Subscription from '8f211093-b624-482d-a217-f89e83496daa' sent to '48209a5b-fc02-477b-88f5-4428fa42c5c8'
+INFO:root:Subscription from '8f211093-b624-482d-a217-f89e83496daa' sent to '48209a5b-fc02-477b-88f5-4428fa42c5c8'
+INFO:root:Subscription from '8f211093-b624-482d-a217-f89e83496daa' sent to '5b002385-3bb1-4e04-8513-93cdfd12a22d'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=772, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 65069), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000020113713240>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000020113713240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000020113713240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000020113713240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000020113713240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '5d7878b4-6fd9-488f-8ddb-41a38710d0b3'
+INFO:root:Registered broker with id '6f06d3c8-a9d1-42ab-bdf9-95f3d8fd6a13'
+INFO:root:Subscription from '57d38278-000b-449d-adf9-d02e4da1e418' sent to '5d7878b4-6fd9-488f-8ddb-41a38710d0b3'
+INFO:root:Subscription from '57d38278-000b-449d-adf9-d02e4da1e418' sent to '6f06d3c8-a9d1-42ab-bdf9-95f3d8fd6a13'
+INFO:root:Subscription from '57d38278-000b-449d-adf9-d02e4da1e418' sent to '6f06d3c8-a9d1-42ab-bdf9-95f3d8fd6a13'
+INFO:root:Subscription from '57d38278-000b-449d-adf9-d02e4da1e418' sent to '5d7878b4-6fd9-488f-8ddb-41a38710d0b3'
+INFO:root:Subscription from '57d38278-000b-449d-adf9-d02e4da1e418' sent to '6f06d3c8-a9d1-42ab-bdf9-95f3d8fd6a13'
+INFO:root:Subscription from '57d38278-000b-449d-adf9-d02e4da1e418' sent to '6f06d3c8-a9d1-42ab-bdf9-95f3d8fd6a13'
+INFO:root:Subscription from '57d38278-000b-449d-adf9-d02e4da1e418' sent to '5d7878b4-6fd9-488f-8ddb-41a38710d0b3'
+INFO:root:Subscription from '57d38278-000b-449d-adf9-d02e4da1e418' sent to '6f06d3c8-a9d1-42ab-bdf9-95f3d8fd6a13'
+INFO:root:Subscription from '57d38278-000b-449d-adf9-d02e4da1e418' sent to '6f06d3c8-a9d1-42ab-bdf9-95f3d8fd6a13'
+INFO:root:Subscription from '57d38278-000b-449d-adf9-d02e4da1e418' sent to '5d7878b4-6fd9-488f-8ddb-41a38710d0b3'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=832, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 65122), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000024C00683240>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000024C00683240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000024C00683240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000024C00683240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000024C00683240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '4da1e094-efdd-4679-b03d-07fe45787a44'
+INFO:root:Registered broker with id 'b21bfdaf-7225-4c77-89a2-bfe7fab0a22c'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=724, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 65154), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000167BC013240>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000167BC013240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000167BC013240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000167BC013240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000167BC013240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '1727da88-6de6-4e1a-817e-911f5a32843e'
+INFO:root:Registered broker with id '8b81fd53-44b1-433c-a52d-f7538d64ed5d'
+INFO:root:Subscription from '1b801a5c-828f-4217-8025-9f2376fa053f' sent to '1727da88-6de6-4e1a-817e-911f5a32843e'
+INFO:root:Subscription from '1b801a5c-828f-4217-8025-9f2376fa053f' sent to '8b81fd53-44b1-433c-a52d-f7538d64ed5d'
+INFO:root:Subscription from '1b801a5c-828f-4217-8025-9f2376fa053f' sent to '8b81fd53-44b1-433c-a52d-f7538d64ed5d'
+INFO:root:Subscription from '1b801a5c-828f-4217-8025-9f2376fa053f' sent to '1727da88-6de6-4e1a-817e-911f5a32843e'
+INFO:root:Subscription from '1b801a5c-828f-4217-8025-9f2376fa053f' sent to '8b81fd53-44b1-433c-a52d-f7538d64ed5d'
+INFO:root:Subscription from '1b801a5c-828f-4217-8025-9f2376fa053f' sent to '8b81fd53-44b1-433c-a52d-f7538d64ed5d'
+INFO:root:Subscription from '1b801a5c-828f-4217-8025-9f2376fa053f' sent to '1727da88-6de6-4e1a-817e-911f5a32843e'
+INFO:root:Subscription from '1b801a5c-828f-4217-8025-9f2376fa053f' sent to '8b81fd53-44b1-433c-a52d-f7538d64ed5d'
+INFO:root:Subscription from '1b801a5c-828f-4217-8025-9f2376fa053f' sent to '8b81fd53-44b1-433c-a52d-f7538d64ed5d'
+INFO:root:Subscription from '1b801a5c-828f-4217-8025-9f2376fa053f' sent to '1727da88-6de6-4e1a-817e-911f5a32843e'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=792, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 65191), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000286F0DE7F98>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000286F0DE7F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000286F0DE7F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000286F0DE7F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x00000286F0DE7F98> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id 'ebb50aa9-76f0-4942-88dc-431f4fd96b43'
+INFO:root:Registered broker with id '3899a15e-2a95-4575-bb0b-384e52809c15'
+INFO:root:Subscription from '4bb137a1-8d9d-4050-8738-393713bc7308' sent to 'ebb50aa9-76f0-4942-88dc-431f4fd96b43'
+INFO:root:Subscription from '4bb137a1-8d9d-4050-8738-393713bc7308' sent to '3899a15e-2a95-4575-bb0b-384e52809c15'
+INFO:root:Subscription from '4bb137a1-8d9d-4050-8738-393713bc7308' sent to '3899a15e-2a95-4575-bb0b-384e52809c15'
+INFO:root:Subscription from '4bb137a1-8d9d-4050-8738-393713bc7308' sent to 'ebb50aa9-76f0-4942-88dc-431f4fd96b43'
+INFO:root:Subscription from '4bb137a1-8d9d-4050-8738-393713bc7308' sent to '3899a15e-2a95-4575-bb0b-384e52809c15'
+INFO:root:Subscription from '4bb137a1-8d9d-4050-8738-393713bc7308' sent to '3899a15e-2a95-4575-bb0b-384e52809c15'
+INFO:root:Subscription from '4bb137a1-8d9d-4050-8738-393713bc7308' sent to 'ebb50aa9-76f0-4942-88dc-431f4fd96b43'
+INFO:root:Subscription from '4bb137a1-8d9d-4050-8738-393713bc7308' sent to '3899a15e-2a95-4575-bb0b-384e52809c15'
+INFO:root:Subscription from '4bb137a1-8d9d-4050-8738-393713bc7308' sent to '3899a15e-2a95-4575-bb0b-384e52809c15'
+INFO:root:Subscription from '4bb137a1-8d9d-4050-8738-393713bc7308' sent to 'ebb50aa9-76f0-4942-88dc-431f4fd96b43'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=792, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 65217), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C5E4433240>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C5E4433240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C5E4433240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C5E4433240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001C5E4433240> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '572ce6aa-aa6e-4221-914e-443898875aa3'
+INFO:root:Registered broker with id '3e730209-9935-44ef-92c3-f5c656440d6c'
+INFO:root:Subscription from '9daa1b09-6624-48c9-ad5f-cebfd0fcb034' sent to '572ce6aa-aa6e-4221-914e-443898875aa3'
+INFO:root:Subscription from '9daa1b09-6624-48c9-ad5f-cebfd0fcb034' sent to '3e730209-9935-44ef-92c3-f5c656440d6c'
+INFO:root:Subscription from '9daa1b09-6624-48c9-ad5f-cebfd0fcb034' sent to '3e730209-9935-44ef-92c3-f5c656440d6c'
+INFO:root:Subscription from '9daa1b09-6624-48c9-ad5f-cebfd0fcb034' sent to '572ce6aa-aa6e-4221-914e-443898875aa3'
+INFO:root:Subscription from '9daa1b09-6624-48c9-ad5f-cebfd0fcb034' sent to '3e730209-9935-44ef-92c3-f5c656440d6c'
+INFO:root:Subscription from '9daa1b09-6624-48c9-ad5f-cebfd0fcb034' sent to '3e730209-9935-44ef-92c3-f5c656440d6c'
+INFO:root:Subscription from '9daa1b09-6624-48c9-ad5f-cebfd0fcb034' sent to '572ce6aa-aa6e-4221-914e-443898875aa3'
+INFO:root:Subscription from '9daa1b09-6624-48c9-ad5f-cebfd0fcb034' sent to '3e730209-9935-44ef-92c3-f5c656440d6c'
+INFO:root:Subscription from '9daa1b09-6624-48c9-ad5f-cebfd0fcb034' sent to '3e730209-9935-44ef-92c3-f5c656440d6c'
+INFO:root:Subscription from '9daa1b09-6624-48c9-ad5f-cebfd0fcb034' sent to '572ce6aa-aa6e-4221-914e-443898875aa3'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=768, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 65247), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001A9CC6A7FD0>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001A9CC6A7FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001A9CC6A7FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001A9CC6A7FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001A9CC6A7FD0> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id 'c0e7f609-05e8-432d-950c-c5021215b9c1'
+INFO:root:Registered broker with id '836ce22e-66af-430c-a292-7c71e8eedcab'
+INFO:root:Subscription from '8b1bfca8-6486-41c0-a376-5c209b50ff3f' sent to 'c0e7f609-05e8-432d-950c-c5021215b9c1'
+INFO:root:Subscription from '8b1bfca8-6486-41c0-a376-5c209b50ff3f' sent to '836ce22e-66af-430c-a292-7c71e8eedcab'
+INFO:root:Subscription from '8b1bfca8-6486-41c0-a376-5c209b50ff3f' sent to '836ce22e-66af-430c-a292-7c71e8eedcab'
+INFO:root:Subscription from '8b1bfca8-6486-41c0-a376-5c209b50ff3f' sent to 'c0e7f609-05e8-432d-950c-c5021215b9c1'
+INFO:root:Subscription from '8b1bfca8-6486-41c0-a376-5c209b50ff3f' sent to '836ce22e-66af-430c-a292-7c71e8eedcab'
+INFO:root:Subscription from '8b1bfca8-6486-41c0-a376-5c209b50ff3f' sent to '836ce22e-66af-430c-a292-7c71e8eedcab'
+INFO:root:Subscription from '8b1bfca8-6486-41c0-a376-5c209b50ff3f' sent to 'c0e7f609-05e8-432d-950c-c5021215b9c1'
+INFO:root:Subscription from '8b1bfca8-6486-41c0-a376-5c209b50ff3f' sent to '836ce22e-66af-430c-a292-7c71e8eedcab'
+INFO:root:Subscription from '8b1bfca8-6486-41c0-a376-5c209b50ff3f' sent to '836ce22e-66af-430c-a292-7c71e8eedcab'
+INFO:root:Subscription from '8b1bfca8-6486-41c0-a376-5c209b50ff3f' sent to 'c0e7f609-05e8-432d-950c-c5021215b9c1'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=768, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 65289), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000020266FC7E10>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000020266FC7E10> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000020266FC7E10> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000020266FC7E10> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x0000020266FC7E10> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '2878bce8-39d2-4ef3-9f4b-04e31a8b970f'
+INFO:root:Registered broker with id '6a578b56-b74c-43a7-bea2-40036cce6c3d'
+INFO:root:Subscription from '59886a5a-e869-4bf2-a453-be4b652a42bd' sent to '2878bce8-39d2-4ef3-9f4b-04e31a8b970f'
+INFO:root:Subscription from '59886a5a-e869-4bf2-a453-be4b652a42bd' sent to '6a578b56-b74c-43a7-bea2-40036cce6c3d'
+INFO:root:Subscription from '59886a5a-e869-4bf2-a453-be4b652a42bd' sent to '6a578b56-b74c-43a7-bea2-40036cce6c3d'
+INFO:root:Subscription from '59886a5a-e869-4bf2-a453-be4b652a42bd' sent to '2878bce8-39d2-4ef3-9f4b-04e31a8b970f'
+INFO:root:Subscription from '59886a5a-e869-4bf2-a453-be4b652a42bd' sent to '6a578b56-b74c-43a7-bea2-40036cce6c3d'
+INFO:root:Subscription from '59886a5a-e869-4bf2-a453-be4b652a42bd' sent to '6a578b56-b74c-43a7-bea2-40036cce6c3d'
+INFO:root:Subscription from '59886a5a-e869-4bf2-a453-be4b652a42bd' sent to '2878bce8-39d2-4ef3-9f4b-04e31a8b970f'
+INFO:root:Subscription from '59886a5a-e869-4bf2-a453-be4b652a42bd' sent to '6a578b56-b74c-43a7-bea2-40036cce6c3d'
+INFO:root:Subscription from '59886a5a-e869-4bf2-a453-be4b652a42bd' sent to '6a578b56-b74c-43a7-bea2-40036cce6c3d'
+INFO:root:Subscription from '59886a5a-e869-4bf2-a453-be4b652a42bd' sent to '2878bce8-39d2-4ef3-9f4b-04e31a8b970f'
+INFO:root:Broker overlay management
+INFO:pika.adapters.utils.connection_workflow:Pika version 1.0.1 connecting to ('127.0.0.1', 5672)
+INFO:pika.adapters.utils.io_services_utils:Socket connected: <socket.socket fd=716, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 65332), raddr=('127.0.0.1', 5672)>
+INFO:pika.adapters.utils.connection_workflow:Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001E480256E48>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001E480256E48> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>).
+INFO:pika.adapters.utils.connection_workflow:AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001E480256E48> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.utils.connection_workflow:AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001E480256E48> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x000001E480256E48> params=<ConnectionParameters host=localhost port=5672 virtual_host=/ ssl=False>>
+INFO:pika.adapters.blocking_connection:Created channel=1
+INFO:pika.adapters.blocking_connection:Created channel=2
+INFO:pika.adapters.blocking_connection:Created channel=3
+INFO:root:Registered broker with id '44aaf289-6b11-4864-a8f3-c38375700103'
+INFO:root:Registered broker with id '4ac6ab4a-9b36-4c91-8d52-5804d02af8e2'
+INFO:root:Subscription from '35098793-d6e7-4aae-bbd9-bb5e5fab3272' sent to '44aaf289-6b11-4864-a8f3-c38375700103'
+INFO:root:Subscription from '35098793-d6e7-4aae-bbd9-bb5e5fab3272' sent to '4ac6ab4a-9b36-4c91-8d52-5804d02af8e2'
+INFO:root:Subscription from '35098793-d6e7-4aae-bbd9-bb5e5fab3272' sent to '4ac6ab4a-9b36-4c91-8d52-5804d02af8e2'
+INFO:root:Subscription from '35098793-d6e7-4aae-bbd9-bb5e5fab3272' sent to '44aaf289-6b11-4864-a8f3-c38375700103'
+INFO:root:Subscription from '35098793-d6e7-4aae-bbd9-bb5e5fab3272' sent to '4ac6ab4a-9b36-4c91-8d52-5804d02af8e2'
+INFO:root:Subscription from '35098793-d6e7-4aae-bbd9-bb5e5fab3272' sent to '4ac6ab4a-9b36-4c91-8d52-5804d02af8e2'
+INFO:root:Subscription from '35098793-d6e7-4aae-bbd9-bb5e5fab3272' sent to '44aaf289-6b11-4864-a8f3-c38375700103'
+INFO:root:Subscription from '35098793-d6e7-4aae-bbd9-bb5e5fab3272' sent to '4ac6ab4a-9b36-4c91-8d52-5804d02af8e2'
+INFO:root:Subscription from '35098793-d6e7-4aae-bbd9-bb5e5fab3272' sent to '4ac6ab4a-9b36-4c91-8d52-5804d02af8e2'
+INFO:root:Subscription from '35098793-d6e7-4aae-bbd9-bb5e5fab3272' sent to '44aaf289-6b11-4864-a8f3-c38375700103'

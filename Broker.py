@@ -4,9 +4,25 @@ import pickle
 import uuid
 import pika
 import os
+import time
+import datetime
+import matplotlib
+import matplotlib.pyplot as plt
 from shared import brokers_exchange, subscriptions_exchange, \
     publications_exchange, match_subscription, parameters
 
+
+with open("recorder.txt", 'w') as f:
+    f.write("[Broker] Started Recording: " + "\n")
+
+global delays
+delays = []
+
+global count 
+count = 0
+
+global times_rec
+times_rec = []
 
 if not os.path.exists("./logs/"):
     os.makedirs("./logs")
@@ -67,14 +83,31 @@ publications_channel.queue_bind(exchange=publications_exchange, queue=publicatio
 
 
 def manage_publications(ch, method, properties, body):
+    global count
+    global times_rec
+    global delays
     print("Received publication '{0}' from publisher with id '{1}'".format(pickle.loads(body), properties.app_id))
     logging.info("Received publication '{0}' from publisher with id '{1}'".format(pickle.loads(body), properties.app_id))
+    
+    start = time.time()
+    with open("recorder.txt", 'a') as f:
+        f.write("Received pub: " + str(properties.app_id) + " at " + str(datetime.datetime.now().time()) + "\n")
+
     pub = [pickle.loads(body)]
     for subscriber in subscribers:
         matched = match_subscription(pub, subscriber[0])
         if len(matched) > 0:
             subscriptions_channel.basic_publish(exchange='', routing_key=subscriber[2], properties=properties,
                                                 body=pickle.dumps((matched, subscriber[0])))
+
+    end = time.time() - start
+    delays.append(time)
+    with open("recorder.txt", 'a') as f:
+        count += 1
+        t = str(datetime.datetime.now().time())
+        times_rec.append(t)
+        f.write("Published pub: " + str(properties.app_id) + " at " + t + "\n")
+
     publications.append(pub[0])
 
 
@@ -88,3 +121,16 @@ try:
 except KeyboardInterrupt:
     publications_channel.stop_consuming()
     subscriptions_channel.stop_consuming()
+
+
+print("TIMES: " + str(times_rec))
+print("COUNT: " + str(count))
+pub_numbers = [str(i) for i in range(count)]
+
+nr = int(len(times_rec)/10)
+
+plot_times = [times_rec[i] for i in range(len(times_rec)) if i % nr == 0]
+plot_count = [pub_numbers[i] for i in range(len(pub_numbers)) if i % nr == 0]
+
+matplotlib.pyplot.plot_date(plot_times, plot_count)
+plt.show()

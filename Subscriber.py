@@ -4,6 +4,8 @@ import pickle
 import uuid
 import pika
 import os
+import datetime
+import matplotlib
 
 from shared import subscriptions_exchange, host, generate_subscriptions,parameters
 
@@ -14,6 +16,15 @@ logging.basicConfig(filename=os.path.join("./logs/",os.path.basename(__file__)+'
 subscriber_id = str(uuid.uuid4())
 print("Subscriber with Id=%r start to send subscriptions" % subscriber_id)
 logging.info("Subscriber with Id=%r start to send subscriptions" % subscriber_id)
+
+# global counter
+# counter = 0
+
+# global times
+# times = []
+
+# global values
+# values = []
 
 connection = pika.BlockingConnection(parameters)
 channel = connection.channel()
@@ -33,11 +44,20 @@ for subscription in subscriptions:
 
 
 def callback(ch, method, properties, body):
+    global counter
+    global times
     response = pickle.loads(body)
     print("Received matching publication %r " % response[0])
     logging.info("Received matching publication %r " % response[0])
     print("\t for subscription %r " % response[1])
     logging.info("\t for subscription %r " % response[1])
+    # counter += 1
+    # with open("recorder.txt", 'a') as f:
+    #     t = str(datetime.datetime.now().time())
+    #     f.write("[SUBSCRIBER] Matching pub with COUNT: " + str(counter) + " Time: " + t + "\n");
+    #     times.append(t)
+    #     values.append(counter)
+        # logging.info("COUNT: " + str(counter) + " Time: " + str(datetime.datetime.now().time()))
 
 
 channel.basic_consume(queue=result_queue, on_message_callback=callback, auto_ack=True)
@@ -45,3 +65,6 @@ try:
     channel.start_consuming()
 except KeyboardInterrupt:
     channel.stop_consuming()
+
+# dates = matplotlib.dates.date2num(times)
+# matplotlib.pyplot.plot_date(times, values)

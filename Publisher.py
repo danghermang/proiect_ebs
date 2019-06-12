@@ -5,6 +5,10 @@ import pika
 import logging
 import os
 from shared import publications_exchange, publications_generator,parameters
+import datetime
+
+# with open("recorder.txt", 'w') as f:
+# 	f.write("[PUBLISHER] Recorder started at: " + str(datetime.datetime.now().time()) + "\n")
 
 if not os.path.exists("./logs/"):
     os.makedirs("./logs")
@@ -23,7 +27,7 @@ channel = connection.channel()
 channel.exchange_declare(exchange=publications_exchange, exchange_type='fanout')
 
 
-for publication in publications_generator():
+for publication in publications_generator(timp=1):
     channel.basic_publish(exchange=publications_exchange, routing_key='', properties=props,
                           body=pickle.dumps(publication))
     print("Sent publication %r" % publication)

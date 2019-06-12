@@ -15,7 +15,7 @@ if __name__ == "__main__":
     logging.basicConfig(filename=os.path.join("./logs/", os.path.basename(__file__) + '.log'), level=logging.INFO)
 host = "ebs"
 credentials = pika.PlainCredentials('ebs', 'ebs')
-parameters = pika.ConnectionParameters('192.168.119.1',
+parameters = pika.ConnectionParameters('localhost',
                                        5672,
                                        '/',
                                        credentials)
@@ -91,13 +91,21 @@ def generate_publications():
     return publications
 
 
-def publications_generator():
+def publications_generator(timp=None):
     logging.info("Generating " + str(config['number_of_publications']) + "publications")
-    for _ in range(config['number_of_publications']):
-        publication = {}
-        for probability in config['probabilities']:
-            publication[probability] = functions[probability]()
-        yield publication
+    if timp:
+        start = time.time()
+        while time.time()-start<timp*20:
+            publication = {}
+            for probability in config['probabilities']:
+                publication[probability] = functions[probability]()
+            yield publication
+    else:
+        for _ in range(config['number_of_publications']):
+            publication = {}
+            for probability in config['probabilities']:
+                publication[probability] = functions[probability]()
+            yield publication
 
 
 def generate_subscriptions():
